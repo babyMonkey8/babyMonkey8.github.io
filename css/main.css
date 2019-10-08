@@ -1021,6 +1021,69 @@ pre .javascript .function {
 .use-motion .menu-item {
   opacity: 0;
 }
+.github-corner :hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+.github-corner svg {
+  border: 0;
+  color: #fff;
+  fill: #222;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+@media (max-width: 991px) {
+  .github-corner .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
+@-moz-keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+@-webkit-keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+@-o-keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
 .sidebar {
   background: #222;
   bottom: 0;
@@ -1102,7 +1165,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff7303;
+  background: #ff996c;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1363,6 +1426,9 @@ pre .javascript .function {
   .container .footer-inner {
     width: 900px;
   }
+}
+#animate {
+  animation: iconAnimate 1.33s ease-in-out infinite;
 }
 .with-love {
   color: #808080;
@@ -1913,6 +1979,82 @@ article:last-child .post-eof {
 .fb_like {
   align-self: center;
   height: 30px;
+}
+#reward-container {
+  margin: 20px auto;
+  padding: 10px 0;
+  text-align: center;
+  width: 90%;
+}
+#reward-button {
+  background: #f44336;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: normal;
+  line-height: 2;
+  margin: 0;
+  outline: 0;
+  padding: 0 15px;
+  text-indent: 0;
+  text-shadow: none;
+  text-transform: none;
+  vertical-align: text-top;
+}
+#reward-button span:hover {
+  background: #f7877f;
+}
+#qr {
+  padding-top: 20px;
+}
+#qr a {
+  border: 0;
+}
+#qr img {
+  display: inline-block;
+  margin: 0.8em 2em 0 2em;
+  max-width: 100%;
+  width: 180px;
+}
+#qr p {
+  text-align: center;
+}
+#qr > div:hover p {
+  animation: roll 0.1s infinite linear;
+}
+@-moz-keyframes roll {
+  from {
+    transform: rotateZ(30deg);
+  }
+  to {
+    transform: rotateZ(-30deg);
+  }
+}
+@-webkit-keyframes roll {
+  from {
+    transform: rotateZ(30deg);
+  }
+  to {
+    transform: rotateZ(-30deg);
+  }
+}
+@-o-keyframes roll {
+  from {
+    transform: rotateZ(30deg);
+  }
+  to {
+    transform: rotateZ(-30deg);
+  }
+}
+@keyframes roll {
+  from {
+    transform: rotateZ(30deg);
+  }
+  to {
+    transform: rotateZ(-30deg);
+  }
 }
 .category-all-page .category-all-title {
   text-align: center;
