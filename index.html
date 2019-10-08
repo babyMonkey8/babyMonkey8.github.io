@@ -306,7 +306,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
             
-            <a href="/2019/10/08/20191008001/" class="post-title-link" itemprop="url">20191008001</a>
+            <a href="/2019/10/08/20191008001/" class="post-title-link" itemprop="url">线性回归之梯度下降</a>
           
         </h1>
 
@@ -321,12 +321,25 @@
                 
               
 
-              <time title="创建时间：2019-10-08 15:23:10 / 修改时间：15:25:10" itemprop="dateCreated datePublished" datetime="2019-10-08T15:23:10+08:00">2019-10-08</time>
+              <time title="创建时间：2019-10-08 15:23:10 / 修改时间：20:46:56" itemprop="dateCreated datePublished" datetime="2019-10-08T15:23:10+08:00">2019-10-08</time>
             </span>
           
             
 
             
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/机器学习/" itemprop="url" rel="index"><span itemprop="name">机器学习</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -338,7 +351,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span>576</span>
+              <span>240</span>
             </span>
           
             <span class="post-meta-item" title="阅读时长">
@@ -361,9 +374,17 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="小小猿网站搭建成功"><a href="#小小猿网站搭建成功" class="headerlink" title="小小猿网站搭建成功"></a>小小猿网站搭建成功</h1><h2 id="小小猿网站搭建成功-1"><a href="#小小猿网站搭建成功-1" class="headerlink" title="小小猿网站搭建成功"></a>小小猿网站搭建成功</h2><h3 id="小小猿网站搭建成功-2"><a href="#小小猿网站搭建成功-2" class="headerlink" title="小小猿网站搭建成功"></a>小小猿网站搭建成功</h3><h4 id="小小猿网站搭建成功-3"><a href="#小小猿网站搭建成功-3" class="headerlink" title="小小猿网站搭建成功"></a>小小猿网站搭建成功</h4><h5 id="小小猿网站搭建成功-4"><a href="#小小猿网站搭建成功-4" class="headerlink" title="小小猿网站搭建成功"></a>小小猿网站搭建成功</h5><h6 id="小小猿网站搭建成功-5"><a href="#小小猿网站搭建成功-5" class="headerlink" title="小小猿网站搭建成功"></a>小小猿网站搭建成功</h6><p>小小猿网站搭建成功小小猿网站搭建成功小小猿网站搭建成功小小猿网站搭建成功<br>小小猿网站搭建成功小小猿网站搭建成功<br>小小猿网站搭建成功小小猿网站搭建成功<br>小小猿网站搭建成功小小猿网站搭建成功<br>小小猿网站搭建成功小小猿网站搭建成功<br>小小猿网站搭建成功小小猿网站搭建成功<br>小小猿网站搭建成功小小猿网站搭建成功<br>小小猿网站搭建成功小小猿网站搭建成功<br>小小猿网站搭建成功小小猿网站搭建成功<br>小小猿网站搭建成功小小猿网站搭建成功<br>小小猿网站搭建成功小小猿网站搭建成功小小猿网站搭建成功小小猿网站搭建成功<br>小小猿网站搭建成功小小猿网站搭建成功小小猿网站搭建成功小小猿网站搭建成功<br>小小猿网站搭建成功小小猿网站搭建成功小小猿网站搭建成功小小猿网站搭建成功</p>
-<p>小小猿网站搭建成功小小猿网站搭建成功<br>小小猿网站搭建成功小小猿网站搭建成功<br>小小猿网站搭建成功小小猿网站搭建成功<br>小小猿网站搭建成功小小猿网站搭建成功<br>小小猿网站搭建成功小小猿网站搭建成功<br>小小猿网站搭建成功小小猿网站搭建成功<br>小小猿网站搭建成功小小猿网站搭建成功<br>小小猿网站搭建成功小小猿网站搭建成功<br>小小猿网站搭建成功小小猿网站搭建成功小小猿网站搭建成功小小猿网站搭建成功<br>小小猿网站搭建成功小小猿网站搭建成功小小猿网站搭建成功小小猿网站搭建成功</p>
+          <h1 id="线性回归"><a href="#线性回归" class="headerlink" title="线性回归"></a>线性回归</h1><h2 id="算法推演"><a href="#算法推演" class="headerlink" title="算法推演"></a>算法推演</h2><pre><code>**举一个例子：如下图1**
 
+    [% asset_img 1.png 图片1 %]
+
+        数据：工资和年龄（两个特征）  分别设为x1：工资 和x2：年龄 连续型随机变量
+
+        目标：预测银行会贷款给个人多少钱（标签） 设最终贷款的额度为Y
+
+        则最终的函数可以写成：Y = θ0 + θ1*x1 +θ2*x2, 我们可以用这个函数来拟合我们的数据点，如下图2
+
+            [% asset_img 1.png 图片1 %]</code></pre>
         
       
     </div>
@@ -440,6 +461,24 @@
           <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span>
+        
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span>
+        
       </div>
     
   </nav>
@@ -519,7 +558,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">1k</span>
+    <span title="站点总字数">0k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
