@@ -78,9 +78,11 @@
 <meta property="og:description" content="新建博客文章并发布">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://babymonkey8.github.io/2019/10/10/20191010003/1.png">
+<meta property="og:image" content="https://babymonkey8.github.io/2019/10/10/20191010003/4.png">
+<meta property="og:image" content="https://babymonkey8.github.io/2019/10/10/20191010003/5.png">
 <meta property="og:image" content="https://babymonkey8.github.io/2019/10/10/20191010003/2.png">
 <meta property="og:image" content="https://babymonkey8.github.io/2019/10/10/20191010003/3.png">
-<meta property="og:updated_time" content="2019-10-10T08:55:09.030Z">
+<meta property="og:updated_time" content="2019-10-10T10:45:49.632Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客新建文章并发布">
 <meta name="twitter:description" content="新建博客文章并发布">
@@ -326,7 +328,7 @@
                 
               
 
-              <time title="创建时间：2019-10-10 15:38:40 / 修改时间：16:55:09" itemprop="dateCreated datePublished" datetime="2019-10-10T15:38:40+08:00">2019-10-10</time>
+              <time title="创建时间：2019-10-10 15:38:40 / 修改时间：18:45:49" itemprop="dateCreated datePublished" datetime="2019-10-10T15:38:40+08:00">2019-10-10</time>
             </span>
           
             
@@ -364,7 +366,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span>922</span>
+              <span>1.3k</span>
             </span>
           
             <span class="post-meta-item" title="阅读时长">
@@ -398,6 +400,11 @@
 <p>​        <code>hexo new &lt;模板&gt; &lt;文章名&gt;</code>这里的<code>文章名</code>不是真正的文章名，而是该文章的页面链接。</p>
 <p>​        而且<code>hexo new &lt;模板&gt; &lt;文章名&gt;</code>中的<code>文章名</code>最好不要用中文，可以用<strong>英文字符或者数字字符</strong></p>
 <p>​        具体文章中显示的文章标题，可以在文章文件中修改，例如：我这里新建一篇文章，title为article</p>
+<p>​    【补充】增添阅读全文按钮设置</p>
+<p>​           方式一：在文章中加入&lt;! – more –&gt;语句， 如下</p>
+<p>​            <img src="/2019/10/10/20191010003/4.png" title="内容4"></p>
+<p>​            方式二：文件头部配置信息中加入description，如下</p>
+<p>​            <img src="/2019/10/10/20191010003/5.png" title="内容5"></p>
 <h1 id="创建文章模板"><a href="#创建文章模板" class="headerlink" title="创建文章模板"></a>创建文章模板</h1><h2 id="文章模板说明"><a href="#文章模板说明" class="headerlink" title="文章模板说明"></a>文章模板说明</h2><p>​    在新建文章中使用的<code>post</code>参数，就是模板的名称，在使用<code>hexo new post &lt;文件名&gt;</code>命令进行新建文章时，系    统会自动在<code>scaffolds</code>文件夹中搜寻名为<code>post</code>的文件，根据其中的内容生成新的<code>.md</code>文章文件。后续随着配置     项的增多，可以自行设置不同类型的模板。例如本篇文章的模板如下：</p>
 <img src="/2019/10/10/20191010003/2.png" title="内容2">
 
@@ -411,7 +418,20 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: Hexo博客新建文章并发布</span><br><span class="line">date: 2018-12-06 12:16:12</span><br><span class="line">tags:</span><br><span class="line"> - Hexo</span><br><span class="line"> - Markdown</span><br><span class="line">categories: 搭建博客</span><br></pre></td></tr></table></figure>
 
 <h2 id="创建独立页面"><a href="#创建独立页面" class="headerlink" title="创建独立页面"></a>创建独立页面</h2><p>​    博客根目录命令行输入：<strong>hexo new page  “pageName”</strong>  新建文章</p>
-<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>​    创建独立页面后，会创建一个相应文件夹，比如text，修改test文件夹中的<strong>.md</strong>文件，可以修改这个独立的页面</p>
+<p>​    【说明】</p>
+<p>​    创建独立页面后，会在source文件下创建一个相应文件夹，比如text，修改test文件夹中的<strong>.md</strong>文件，可以修改    这个独立的页面。source文件夹中专门放置各种页面，比如文章页面，标签页面，音乐页面，资源页面等。</p>
+<h1 id="markdown文章中常见快捷键总结"><a href="#markdown文章中常见快捷键总结" class="headerlink" title="markdown文章中常见快捷键总结"></a>markdown文章中常见快捷键总结</h1><p>· 加粗 Ctrl + B</p>
+<p>· 斜体 Ctrl + I</p>
+<p>· 引用 Ctrl + Q</p>
+<p>· 插入链接 Ctrl + L</p>
+<p>· 插入代码 Ctrl + K</p>
+<p>· 插入图片 Ctrl + G</p>
+<p>· 提升标题 Ctrl + H</p>
+<p>· 有序列表 Ctrl + O</p>
+<p>· 无序列表 Ctrl + U</p>
+<p>· 横线 Ctrl + R</p>
+<p>· 撤销 Ctrl + Z</p>
+<p>· 重做 Ctrl + Y</p>
 
     </div>
 
@@ -517,7 +537,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#创建新文章"><span class="nav-number">1.</span> <span class="nav-text">创建新文章</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#方式一："><span class="nav-number">1.1.</span> <span class="nav-text">方式一：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方式二："><span class="nav-number">1.2.</span> <span class="nav-text">方式二：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建文章模板"><span class="nav-number">2.</span> <span class="nav-text">创建文章模板</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#文章模板说明"><span class="nav-number">2.1.</span> <span class="nav-text">文章模板说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建独立页面"><span class="nav-number">2.2.</span> <span class="nav-text">创建独立页面</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#说明"><span class="nav-number">2.2.1.</span> <span class="nav-text">说明</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#创建新文章"><span class="nav-number">1.</span> <span class="nav-text">创建新文章</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#方式一："><span class="nav-number">1.1.</span> <span class="nav-text">方式一：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方式二："><span class="nav-number">1.2.</span> <span class="nav-text">方式二：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建文章模板"><span class="nav-number">2.</span> <span class="nav-text">创建文章模板</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#文章模板说明"><span class="nav-number">2.1.</span> <span class="nav-text">文章模板说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建独立页面"><span class="nav-number">2.2.</span> <span class="nav-text">创建独立页面</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#markdown文章中常见快捷键总结"><span class="nav-number">3.</span> <span class="nav-text">markdown文章中常见快捷键总结</span></a></li></ol></div>
         
       </div>
       <!--/noindex-->
@@ -536,7 +556,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -545,7 +565,7 @@
       
       <div class="site-state-item site-state-categories">
         
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span>
         
       </div>
@@ -554,7 +574,7 @@
       
       <div class="site-state-item site-state-tags">
         
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span>
         
       </div>
@@ -636,12 +656,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">1k</span>
+    <span title="站点总字数">3k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1 分钟</span>
+    <span title="站点阅读时长">2 分钟</span>
 </div>
 
         
